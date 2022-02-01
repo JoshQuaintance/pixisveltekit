@@ -5,6 +5,7 @@
 
     let el: HTMLDivElement;
 
+    // have to make sure there is an element to append to
     onMount(async () => {
         run(el)
     })

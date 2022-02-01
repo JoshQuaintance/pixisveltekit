@@ -1,3 +1,4 @@
+// the shim is necessary and have to be ontop of pixijs
 import './pixi-shim';
 import * as PIXI from '../pixijs/pixi';
 
@@ -9,5 +10,7 @@ export async function run(el: HTMLDivElement): Promise<void> {
     });
 
     el.appendChild(app.view);
+    
+    // THIS IS IMPORTANT. IT STARTS THE APP!!
     app.render();
 }
